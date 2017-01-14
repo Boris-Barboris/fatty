@@ -12,7 +12,7 @@ using tabs.
 
 * Most features from mintty should work
 * To create new tab, press ctrl-shift-T
-* ctrl-shift-W closes the tab
+* ctrl-shift-X closes the tab
 * To change active tab, click it with mouse or press shift-(left arrow|right arrow)
 * To move tab, press ctrl-shift-(arrow direction)
 
@@ -33,8 +33,7 @@ Then, in Cygwin terminal run following commands:
 
     git clone https://github.com/juho-p/fatty.git
     cd fatty
-    make
-    cp src/fatty.exe /bin
+    make install
   
 You can then try running it by typing `fatty`
   
