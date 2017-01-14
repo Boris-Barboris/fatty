@@ -455,7 +455,7 @@ win_key_down(WPARAM wp, LPARAM lp)
         when 'F': send_syscommand(IDM_FULLSCREEN);
         when 'S': send_syscommand(IDM_FLIPSCREEN);
         when 'T': win_tab_create();
-        when 'W': child_terminate(active_term->child);
+        when 'X': child_terminate(active_term->child);
       }
       return 1;
     }
@@ -789,7 +789,7 @@ win_key_down(WPARAM wp, LPARAM lp)
     when 'A' ... 'Z' or ' ':
       if (key != ' ' && alt_code_key(key - 'A' + 0xA));
       else if (shift && ctrl && key == 'T') win_tab_create();
-      else if (shift && ctrl && key == 'W') child_terminate(active_term->child);
+      else if (shift && ctrl && key == 'X') child_terminate(active_term->child);
       else if (char_key());
       else if (active_term->modify_other_keys > 1) modify_other_key();
       else if (ctrl_key());
