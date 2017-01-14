@@ -33,6 +33,8 @@ static bool fullscr_on_max;
 static bool resizing;
 static bool title_settable = true;
 
+bool win_is_fullscreen = false;
+
 static HBITMAP caretbm;
 
 static int term_initialized;
